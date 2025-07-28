@@ -1,0 +1,7 @@
+.env
+venv/
+*.pyc
+test.py
+training.py
+*.pkl
+model.py
