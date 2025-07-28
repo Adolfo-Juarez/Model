@@ -22,6 +22,10 @@ def get_all():
     result = analyze_all_patients()
     return jsonify(result)
 
+@api.route("/health", methods=["GET"])
+def healt():
+    return jsonify({"status":"ok"})
+
 # Registrar el blueprint en la aplicación
 app.register_blueprint(api)
 
